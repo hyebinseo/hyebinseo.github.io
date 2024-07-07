@@ -1,0 +1,123 @@
+body {
+  font-family: "Candara", monospace;
+  background-color: #f8f8f8;
+  color: #474747;
+}
+
+header {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  font-size: 1.5rem;
+}
+
+footer {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+main {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+nav {
+  background-color: #e0e9f5;
+  padding: 1rem;
+  text-align: center;
+  a {
+    margin: 0 20px;
+    color: #a9b1b1;
+    text-decoration: none;
+    font-size: 1.5rem;
+    &.active {
+      color: #1245ba;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+/*이 코드는 추후에 nesting이 지원이 되면 삭제할 코드*/
+nav a {
+  margin: 0 20px;
+  color: #a9b1b1;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+nav a:active {
+  color: #1245ba;
+  font-size: 1.6rem;
+}
+/*이 코드는 추후에 nesting이 지원이 되면 삭제할 코드*/
+
+h1 {
+  font-size: 1.4rem;
+  color: #1245ba;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.profileBox {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+}
+
+.imgBox {
+  padding: 0.5rem;
+  width: 50%;
+  height: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.columnImg {
+  width: 100%;
+  height: 100%;
+}
+
+#githublink {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+
+  #githublink {
+    font-size: 0.8rem;
+  }
+  main {
+    font-size: 1rem;
+  }
+  .cvlink {
+    font-size: 1rem;
+  }
+
+  nav a,
+  nav a.active,
+  nav a:hover,
+  h1,
+  a {
+    font-size: 1.3rem;
+  }
+}
