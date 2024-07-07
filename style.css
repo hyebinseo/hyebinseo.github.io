@@ -5,18 +5,18 @@ body {
 }
 
 header {
-  max-width: 800px;
+  max-width: 680px;
   margin: 2em auto;
   padding: 1rem;
-  background-color: #f8f8f8;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
   max-width: 800px;
   margin: 2em auto;
   padding: 1rem;
-  background-color: #f8f8f8;
   font-size: 0.8rem;
   text-align: center;
   padding-top: 2rem;
@@ -26,7 +26,6 @@ main {
   max-width: 680px;
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #f8f8f8;
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -34,21 +33,24 @@ main {
 nav {
   background-color: #e0e9f5;
   padding: 1rem;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   a {
     margin: 0 20px;
     color: #a9b1b1;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     &.active {
       color: #1245ba;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
     }
   }
 }
 
 /*이 코드는 추후에 nesting이 지원이 되면 삭제할 코드*/
-nav a {
+/* nav a {
   margin: 0 20px;
   color: #a9b1b1;
   text-decoration: none;
@@ -57,7 +59,7 @@ nav a {
 nav a:active {
   color: #1245ba;
   font-size: 1.6rem;
-}
+} */
 /*이 코드는 추후에 nesting이 지원이 되면 삭제할 코드*/
 
 h1 {
@@ -73,10 +75,10 @@ h1 {
   display: flex;
   width: fit-content;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .imgBox {
-  padding: 0.5rem;
   width: 50%;
   height: 50%;
 
@@ -118,6 +120,6 @@ h1 {
   nav a:hover,
   h1,
   a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
