@@ -1,125 +1,61 @@
 body {
-  font-family: "Candara", monospace;
-  background-color: #f8f8f8;
+  font-family: "Georgia", serif;
+  background-color: #fcfafa;
   color: #474747;
 }
 
-header {
-  max-width: 680px;
-  margin: 2em auto;
-  padding: 1rem;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-footer {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 1rem;
-  font-size: 0.8rem;
-  text-align: center;
-  padding-top: 2rem;
+#profile {
+  float:right;
+  margin-right: 0px;
 }
 
 main {
-  max-width: 680px;
-  margin: 2rem auto;
-  padding: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 4rem;
+  font-size: 1rem;
+  line-height: 1.45;
 }
 
-nav {
-  background-color: #e0e9f5;
-  padding: 1rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  a {
-    margin: 0 20px;
-    color: #a9b1b1;
-    text-decoration: none;
-    font-size: 1.2rem;
-    &.active {
-      color: #1245ba;
-      font-size: 1.2rem;
-    }
-  }
+p {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
-
-/*이 코드는 추후에 nesting이 지원이 되면 삭제할 코드*/
-/* nav a {
-  margin: 0 20px;
-  color: #a9b1b1;
-  text-decoration: none;
-  font-size: 1.6rem;
-}
-nav a:active {
-  color: #1245ba;
-  font-size: 1.6rem;
-} */
-/*이 코드는 추후에 nesting이 지원이 되면 삭제할 코드*/
 
 h1 {
-  font-size: 1.4rem;
-  color: #1245ba;
+  margin-bottom: 35px;
 }
 
-.title {
-  font-size: 2rem;
+h3 {
+  margin-bottom: 0px;
 }
 
-.profileBox {
-  display: flex;
-  width: fit-content;
-  justify-content: space-between;
-  gap: 1rem;
+a:link {
+  color: #790000;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.imgBox {
-  width: 50%;
-  height: 50%;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
+a:visited {
+  color: rgb(255, 170, 184);
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.columnImg {
-  width: 100%;
-  height: 100%;
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
-#githublink {
-  font-size: 0.9rem;
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
-  header {
-    font-size: 1rem;
-  }
-  footer {
-    font-size: 0.7rem;
-  }
-
-  #githublink {
-    font-size: 0.8rem;
-  }
-  main {
-    font-size: 1rem;
-  }
-  .cvlink {
-    font-size: 1rem;
-  }
-
-  nav a,
-  nav a.active,
-  nav a:hover,
-  h1,
-  a {
-    font-size: 1.2rem;
-  }
+footer {
+  margin: 6em auto;
+  font-size: 0.6rem;
+  text-align: center;
 }
