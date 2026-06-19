@@ -5,8 +5,8 @@ body {
 }
 
 #profile {
-  float:right;
-  margin-right: 0px;
+  float:left;
+  margin-right:90px;
 }
 
 main {
@@ -23,7 +23,7 @@ p {
 }
 
 h1 {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 h3 {
