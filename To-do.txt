@@ -1,2 +1,4 @@
 1. SEO so that site appears as the first result
 https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+
+2. Adjust website for viewing on mobile devices
